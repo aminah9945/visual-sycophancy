@@ -14,7 +14,7 @@ Course research project (Visual Analytics + Generative AI).
 
 ## Setup
 ```bash
-python -m venv .venv && source .venv/bin/activate        # Windows: .venv\Scriptsctivate
+python -m venv .venv && source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 pip install torch --index-url https://download.pytorch.org/whl/cu124   # Phase A only
 pip install transformers accelerate                                    # Phase A only
