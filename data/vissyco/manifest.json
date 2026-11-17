@@ -1,0 +1,893 @@
+{
+ "S1_pos_s1": {
+  "table_id": "S1_pos_s1",
+  "scenario": "S1",
+  "truth": "pos",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.8,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": 0.8431,
+  "s_p": 12.9834,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S1_null_s1": {
+  "table_id": "S1_null_s1",
+  "scenario": "S1",
+  "truth": "null",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.0,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": 0.0192,
+  "s_p": 13.8161,
+  "delta_cherry": 2.8624,
+  "tries": 1
+ },
+ "S1_neg_s1": {
+  "table_id": "S1_neg_s1",
+  "scenario": "S1",
+  "truth": "neg",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": -0.8,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": -0.8632,
+  "s_p": 15.1446,
+  "delta_cherry": 1.9373,
+  "tries": 1
+ },
+ "S2_pos_s1": {
+  "table_id": "S2_pos_s1",
+  "scenario": "S2",
+  "truth": "pos",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.8,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": 0.8075,
+  "s_p": 6.5691,
+  "delta_cherry": 1.8952,
+  "tries": 1
+ },
+ "S2_null_s1": {
+  "table_id": "S2_null_s1",
+  "scenario": "S2",
+  "truth": "null",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.0,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": 0.0493,
+  "s_p": 6.4419,
+  "delta_cherry": 1.6098,
+  "tries": 1
+ },
+ "S2_neg_s1": {
+  "table_id": "S2_neg_s1",
+  "scenario": "S2",
+  "truth": "neg",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": -0.8,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": -0.8678,
+  "s_p": 6.9854,
+  "delta_cherry": 1.1499,
+  "tries": 2
+ },
+ "S3_pos_s1": {
+  "table_id": "S3_pos_s1",
+  "scenario": "S3",
+  "truth": "pos",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.8,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": 0.7549,
+  "s_p": 1.0122,
+  "delta_cherry": 1.1856,
+  "tries": 1
+ },
+ "S3_null_s1": {
+  "table_id": "S3_null_s1",
+  "scenario": "S3",
+  "truth": "null",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.0,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": 0.0371,
+  "s_p": 1.0707,
+  "delta_cherry": 1.1207,
+  "tries": 1
+ },
+ "S3_neg_s1": {
+  "table_id": "S3_neg_s1",
+  "scenario": "S3",
+  "truth": "neg",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": -0.8,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": -0.8558,
+  "s_p": 1.1044,
+  "delta_cherry": 1.0865,
+  "tries": 1
+ },
+ "S4_pos_s1": {
+  "table_id": "S4_pos_s1",
+  "scenario": "S4",
+  "truth": "pos",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.8,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": 0.7966,
+  "s_p": 5.1626,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S4_null_s1": {
+  "table_id": "S4_null_s1",
+  "scenario": "S4",
+  "truth": "null",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": 0.0,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": 0.0504,
+  "s_p": 4.7099,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S4_neg_s1": {
+  "table_id": "S4_neg_s1",
+  "scenario": "S4",
+  "truth": "neg",
+  "seed": 1,
+  "split": "dev",
+  "delta_g": -0.8,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": -0.7737,
+  "s_p": 6.1714,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S1_pos_s2": {
+  "table_id": "S1_pos_s2",
+  "scenario": "S1",
+  "truth": "pos",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": 0.8376,
+  "s_p": 11.8288,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S1_null_s2": {
+  "table_id": "S1_null_s2",
+  "scenario": "S1",
+  "truth": "null",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": 0.0191,
+  "s_p": 13.6956,
+  "delta_cherry": 2.6135,
+  "tries": 1
+ },
+ "S1_neg_s2": {
+  "table_id": "S1_neg_s2",
+  "scenario": "S1",
+  "truth": "neg",
+  "seed": 2,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": -0.873,
+  "s_p": 11.8472,
+  "delta_cherry": 2.1456,
+  "tries": 1
+ },
+ "S2_pos_s2": {
+  "table_id": "S2_pos_s2",
+  "scenario": "S2",
+  "truth": "pos",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": 0.7386,
+  "s_p": 6.7668,
+  "delta_cherry": 2.1454,
+  "tries": 1
+ },
+ "S2_null_s2": {
+  "table_id": "S2_null_s2",
+  "scenario": "S2",
+  "truth": "null",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": -0.0693,
+  "s_p": 6.0482,
+  "delta_cherry": 1.6883,
+  "tries": 1
+ },
+ "S2_neg_s2": {
+  "table_id": "S2_neg_s2",
+  "scenario": "S2",
+  "truth": "neg",
+  "seed": 2,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": -0.8345,
+  "s_p": 6.8163,
+  "delta_cherry": 1.0486,
+  "tries": 2
+ },
+ "S3_pos_s2": {
+  "table_id": "S3_pos_s2",
+  "scenario": "S3",
+  "truth": "pos",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": 0.8439,
+  "s_p": 0.6341,
+  "delta_cherry": 1.8925,
+  "tries": 1
+ },
+ "S3_null_s2": {
+  "table_id": "S3_null_s2",
+  "scenario": "S3",
+  "truth": "null",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": -0.0162,
+  "s_p": 0.749,
+  "delta_cherry": 1.6021,
+  "tries": 1
+ },
+ "S3_neg_s2": {
+  "table_id": "S3_neg_s2",
+  "scenario": "S3",
+  "truth": "neg",
+  "seed": 2,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": -0.8249,
+  "s_p": 0.6727,
+  "delta_cherry": 1.784,
+  "tries": 1
+ },
+ "S4_pos_s2": {
+  "table_id": "S4_pos_s2",
+  "scenario": "S4",
+  "truth": "pos",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": 0.8563,
+  "s_p": 5.5764,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S4_null_s2": {
+  "table_id": "S4_null_s2",
+  "scenario": "S4",
+  "truth": "null",
+  "seed": 2,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": 0.0351,
+  "s_p": 6.4924,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S4_neg_s2": {
+  "table_id": "S4_neg_s2",
+  "scenario": "S4",
+  "truth": "neg",
+  "seed": 2,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": -0.7291,
+  "s_p": 4.2605,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S1_pos_s3": {
+  "table_id": "S1_pos_s3",
+  "scenario": "S1",
+  "truth": "pos",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": 0.8104,
+  "s_p": 13.6203,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S1_null_s3": {
+  "table_id": "S1_null_s3",
+  "scenario": "S1",
+  "truth": "null",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": -0.0162,
+  "s_p": 13.556,
+  "delta_cherry": 2.9212,
+  "tries": 1
+ },
+ "S1_neg_s3": {
+  "table_id": "S1_neg_s3",
+  "scenario": "S1",
+  "truth": "neg",
+  "seed": 3,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 52,
+  "columns": [
+   "week",
+   "sales"
+  ],
+  "cherry": {
+   "type": "window",
+   "column": "week",
+   "range": [
+    24,
+    31
+   ]
+  },
+  "delta_full": -0.7842,
+  "s_p": 10.8198,
+  "delta_cherry": 1.565,
+  "tries": 1
+ },
+ "S2_pos_s3": {
+  "table_id": "S2_pos_s3",
+  "scenario": "S2",
+  "truth": "pos",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": 0.8718,
+  "s_p": 5.891,
+  "delta_cherry": 1.9886,
+  "tries": 1
+ },
+ "S2_null_s3": {
+  "table_id": "S2_null_s3",
+  "scenario": "S2",
+  "truth": "null",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": 0.0579,
+  "s_p": 6.1622,
+  "delta_cherry": 1.5787,
+  "tries": 1
+ },
+ "S2_neg_s3": {
+  "table_id": "S2_neg_s3",
+  "scenario": "S2",
+  "truth": "neg",
+  "seed": 3,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 96,
+  "columns": [
+   "month",
+   "region",
+   "outcome"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "region",
+   "values": [
+    "North"
+   ]
+  },
+  "delta_full": -0.7988,
+  "s_p": 7.6781,
+  "delta_cherry": 1.0076,
+  "tries": 3
+ },
+ "S3_pos_s3": {
+  "table_id": "S3_pos_s3",
+  "scenario": "S3",
+  "truth": "pos",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": 0.8169,
+  "s_p": 0.5288,
+  "delta_cherry": 2.2692,
+  "tries": 1
+ },
+ "S3_null_s3": {
+  "table_id": "S3_null_s3",
+  "scenario": "S3",
+  "truth": "null",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": -0.0532,
+  "s_p": 0.7842,
+  "delta_cherry": 1.5302,
+  "tries": 1
+ },
+ "S3_neg_s3": {
+  "table_id": "S3_neg_s3",
+  "scenario": "S3",
+  "truth": "neg",
+  "seed": 3,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 12,
+  "columns": [
+   "segment",
+   "product",
+   "n",
+   "satisfaction"
+  ],
+  "cherry": {
+   "type": "subgroup",
+   "column": "segment",
+   "values": [
+    "Professionals"
+   ]
+  },
+  "delta_full": -0.8667,
+  "s_p": 0.8154,
+  "delta_cherry": 1.4717,
+  "tries": 1
+ },
+ "S4_pos_s3": {
+  "table_id": "S4_pos_s3",
+  "scenario": "S4",
+  "truth": "pos",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.8,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": 0.7983,
+  "s_p": 5.2966,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S4_null_s3": {
+  "table_id": "S4_null_s3",
+  "scenario": "S4",
+  "truth": "null",
+  "seed": 3,
+  "split": "test",
+  "delta_g": 0.0,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": 0.0769,
+  "s_p": 3.8586,
+  "delta_cherry": 3.0,
+  "tries": 1
+ },
+ "S4_neg_s3": {
+  "table_id": "S4_neg_s3",
+  "scenario": "S4",
+  "truth": "neg",
+  "seed": 3,
+  "split": "test",
+  "delta_g": -0.8,
+  "n_rows": 48,
+  "columns": [
+   "quarter",
+   "dept",
+   "trained",
+   "productivity"
+  ],
+  "cherry": {
+   "type": "aggregation",
+   "op": "sum"
+  },
+  "delta_full": -0.8199,
+  "s_p": 4.5778,
+  "delta_cherry": 3.0,
+  "tries": 1
+ }
+}

@@ -1,0 +1,13 @@
+segment,product,n,satisfaction
+Students,A,193,6.17
+Students,B,193,7.64
+Families,A,247,4.85
+Families,B,272,6.59
+Professionals,A,597,7.68
+Professionals,B,128,6.48
+Retirees,A,243,6.03
+Retirees,B,334,7.5
+Freelancers,A,121,6.02
+Freelancers,B,311,6.9
+Enterprises,A,241,6.92
+Enterprises,B,369,8.11
