@@ -1,0 +1,28 @@
+# One query per line. Lines starting with # are ignored.
+# Run all:  python litreview/lit.py run-queries --since 2019
+# --- Block A: the core gap (if one of these finds an exact match, re-check novelty) ---
+sycophancy visualization generation
+sycophancy chart large language model
+LLM chart generation user hypothesis bias
+confirmation bias LLM data visualization
+misleading chart generation large language model
+LLM generated visualization cherry picking
+# --- Block B: misleading visualizations ---
+misleading visualization taxonomy
+deceptive visualization truncated axis
+misleading chart detection multimodal LLM
+misleading chart question answering
+visualization linting design rules
+# --- Block C: LLMs for visualization / visual analytics ---
+natural language to visualization LLM
+LLM visualization recommendation Vega-Lite
+conversational visual analytics LLM agent
+LLM data analysis agent reliability
+# --- Block D: sycophancy and self-correction ---
+sycophancy language models
+framing effects LLM data analysis
+self-refine LLM feedback
+LLM self-correction external feedback
+# --- Block E: cognitive bias in visual analytics ---
+cognitive bias visual analytics
+confirmation bias visualization mitigation
