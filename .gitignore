@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+# large experiment artefacts (keep summaries, not raw dumps)
+runs/**/raw/
+external/
+models/
+*.safetensors
+*.bin
