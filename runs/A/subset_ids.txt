@@ -1,0 +1,500 @@
+10113_test|In how many countries, is the percentage of population within the age-group of 65 and above greater than 6 % ?
+10113_test|What is the difference between the percentage of population within the age-group 0-14 in Rwanda and that in Myanmar ?
+10140_test|What is the difference between two consecutive major ticks on the X-axis ?
+10146_test|In how many countries, is the life expectancy(male) greater than 52 years ?
+10204_test|Across all countries, what is the minimum population of in 1961 ?
+10208_test|In how many years, is the percentage of raw materials imports greater than 1 % ?
+10265_test|What is the difference between two consecutive major ticks on the X-axis ?
+10284_test|What is the difference between the percentage of self-employed workers in Israel in 1995 and that in 2010 ?
+10307_test|Is the difference between the percentage of unemployed male youth population in Barbados in 1998 and 2002 greater than the difference between the percentage of unemployed male youth population in Italy in 1998 and 2002 ?
+10335_test|In how many years, is the price level ratio in Sweden greater than 0.88  ?
+10335_test|What is the difference between two consecutive major ticks on the X-axis ?
+10352_test|Is the difference between the amount earned from merchandise exports in Germany in 1987 and 1988 greater than the difference between the amount earned from merchandise exports in Qatar in 1987 and 1988 ?
+10560_test|Is the difference between the value added by industrial sector in Lower middle income and South Asia greater than the difference between the value added by agricultural sector in Lower middle income and South Asia ?
+10567_test|Is the difference between the Insurance provided to residents in 2005 in Japan and Korea (Republic) greater than the difference between the Insurance provided to residents in 2007 in Japan and Korea (Republic) ?
+10567_test|What is the difference between two consecutive major ticks on the X-axis ?
+10629_test|In how many countries, is the percentage of stunted female children greater than the average percentage of stunted female children taken over all countries ?
+10886_test|What is the difference between the entrance age of chiildren in primary education in Ecuador and that in Maldives ?
+10917_test|Across all countries, what is the minimum percentage of population in urban agglomerations in 1961 ?
+10942_test|In how many years, is the external debt owed by residents in Nigeria greater than 1400000000 US$ ?
+10945_test|Across all countries, what is the minimum unemployment in in 1992 ?
+10994_test|Is the difference between the percentage of economically active children in manufacturing in 2001 and 2010 greater than the difference between the percentage of economically active children in agriculture in 2001 and 2010 ?
+11031_test|Across all years, what is the minimum percentage of urban population using sanitaion services in Bhutan ?
+11251_test|What is the difference between the proportion of the female labor force who participated in production in 1991 in Switzerland and that in Tajikistan ?
+11257_test|Is the difference between the percentage of female workers in agriculture in Finland and Greece greater than the difference between the percentage of female workers in industry in Finland and Greece ?
+11363_test|Across all countries, what is the minimum percentage of underweight children ?
+11453_test|Across all years, what is the minimum percentage of women justifying domestic violence due to arguments ?
+11561_test|Across all years, what is the minimum total imports in Panama ?
+11721_test|Across all countries, what is the minimum total CO2 emitted in 1960 ?
+11725_test|In how many countries, is the export of goods and services greater than 5600000000 LCU ?
+11781_test|What is the difference between the percentage of imports to different countries in 1965 in High income: OECD and that in North America ?
+11827_test|In how many countries, is the percentage of female workers in industry greater than 32 % ?
+11957_test|Is the difference between the percentage of new male entrants in Norway in 2004 and 2006 greater than the difference between the percentage of new male entrants in Central African Republic in 2004 and 2006 ?
+11989_test|What is the difference between two consecutive major ticks on the X-axis ?
+12107_test|Is the difference between the amount spent for social causes by the government in Honduras in 2004 and 2006 greater than the difference between the amount spent for social causes by the government in Canada in 2004 and 2006 ?
+12108_test|What is the difference between the percentage of broad money claimed on domestic economy in Angola in 2008 and that in 2010 ?
+12394_test|Across all countries, what is the minimum percentage of exports to different countries in 1964 ?
+12473_test|Across all years, what is the minimum amount spent on imports in Papua New Guinea ?
+12499_test|Across all years, what is the maximum amount of loan disimbursed by other organisations ?
+12577_test|Is the difference between the net ODA received in 1962 in Morocco and Peru greater than the difference between the net ODA received in 1963 in Morocco and Peru ?
+12663_test|Across all years, what is the maximum percentage of urban population growth in Moldova ?
+12844_test|Is the difference between the proportion of female employers in Latin America(developing only) in 2007 and 2008 greater than the difference between the proportion of female employers in Russian Federation in 2007 and 2008 ?
+12957_test|What is the difference between the highest and the second highest adjusted net savings in Cote d'Ivoire ?
+12965_test|Is the difference between the net ODA received in 1960 in Benin and Burkina Faso greater than the difference between the net ODA received in 1962 in Benin and Burkina Faso ?
+12984_test|What is the difference between the percentage of amount spent on subsidies in Grenada and that in India ?
+12984_test|What is the difference between two consecutive major ticks on the X-axis ?
+13024_test|Is the difference between the male labor force participation rate in 1990 in Maldives and Mauritania greater than the difference between the male labor force participation rate in 1991 in Maldives and Mauritania ?
+13024_test|What is the difference between the male labor force participation rate in 1993 in Maldives and that in Mali ?
+13024_test|What is the difference between two consecutive major ticks on the X-axis ?
+13064_test|Across all years, what is the minimum gross enrolment ratio(female) in pre-primary schools ?
+13064_test|Is the difference between the gross enrolment ratio(female) in primary schools in 2000 and 2002 greater than the difference between the gross enrolment ratio(female) in secondary schools in 2000 and 2002 ?
+13090_test|Across all countries, what is the minimum net disbursements made by poland ?
+13226_test|Across all years, what is the minimum lower secondary completion rate of female students in Comoros ?
+13235_test|Across all years, what is the minimum expenditure spent by government on the tertiary education in Niger ?
+13253_test|In how many years, is the amount of aid given by australia greater than 6000000 US$ ?
+13255_test|Across all countries, what is the minimum food production index ?
+13258_test|In how many countries, is the secondary school starting age of children in 1970 greater than 4.8 years ?
+13283_test|Is the difference between the net incurrence of foreign liabilities in Kyrgyz Republic in 2007 and 2010 greater than the difference between the net incurrence of foreign liabilities in Caribbean small states in 2007 and 2010 ?
+13442_test|What is the difference between two consecutive major ticks on the X-axis ?
+13805_test|Is the difference between the net bilateral aid flow in Burundi in 2005 and 2006 greater than the difference between the net bilateral aid flow in Azerbaijan in 2005 and 2006 ?
+13866_test|Is the difference between the total expenditure spent by the government in R&D projects in Myanmar in 1997 and 2001 greater than the difference between the total expenditure spent by the government in R&D projects in World in 1997 and 2001 ?
+14145_test|What is the difference between two consecutive major ticks on the X-axis ?
+14231_test|Across all years, what is the minimum percentage of male labor force with tertiary education in United Kingdom ?
+14394_test|What is the difference between the merchandise imports in Cuba and that in Nigeria ?
+14414_test|In how many years, is the CPIA rating in Vietnam greater than 2.3  ?
+14503_test|In how many years, is the total theoretical duration of secondary education in Slovak Republic greater than 8 years ?
+14626_test|Across all countries, what is the minimum total CO2 emitted in 1961 ?
+14626_test|What is the difference between two consecutive major ticks on the X-axis ?
+14782_test|Is the difference between the male labor force participation rate in 1992 in Morocco and Namibia greater than the difference between the male labor force participation rate in 1991 in Morocco and Namibia ?
+14959_test|In how many countries, is the incurrence of foreign liabilities greater than the average incurrence of foreign liabilities taken over all countries ?
+15116_test|Across all years, what is the minimum agriculture value added per worker ?
+15370_test|What is the difference between the net bilateral aid flows from dac donors in Cote d'Ivoire and Cuba ?
+15461_test|In how many countries, is the customs and other import duties greater than 13 % ?
+15461_test|What is the difference between the highest and the second highest customs and other import duties ?
+15620_test|What is the difference between the highest and the second highest unemployed females population ?
+15985_test|What is the difference between the highest and the second highest unemployed males population ?
+16080_test|Across all years, what is the minimum annual freshwater withdrawals ?
+16080_test|What is the difference between the highest and the second highest annual freshwater withdrawals ?
+16108_test|What is the difference between the highest and the second highest percentage of full-time male workers ?
+16215_test|In how many countries, is the prevalence of severe wasting greater than 0.3 % ?
+16215_test|What is the difference between the prevalence of severe wasting in Bangladesh and Cote d'Ivoire ?
+16231_test|Do a majority of the years between 1992 and 1988 (inclusive) have total unemployed male labour force greater than 1.8 % ?
+16231_test|What is the difference between the highest and the second highest total unemployed male labour force ?
+16645_test|In how many countries, is the percentage of part-time male workers greater than 11 % ?
+16685_test|In how many countries, is the amount of ict goods exports greater than 21 % ?
+16877_test|In how many years, is the amount of private funds spent in healthcare greater than 1.8 %?
+16883_test|Does the percentage of school going boys monotonically increase over the years ?
+16900_test|Across all years, what is the minimum percentage of registered firms ?
+16900_test|In how many years, is the percentage of registered firms greater than 4 %?
+16904_test|Across all years, what is the minimum domestic credit provided by money lenders ?
+16925_test|What is the difference between the highest and the second highest merchandise exports ?
+16925_test|What is the merchandise imports in 1986 ?
+16941_test|Across all years, what is the minimum adolescent fertility rate ?
+16954_test|Across all years, what is the minimum percentage of fraud firms ?
+16954_test|What is the percentage of fraud firms in 2006 ?
+16981_test|Does the income share held by lowest 10% of the population monotonically increase over the years ?
+16981_test|In how many years, is the income share held by highest 10% of the population greater than 32 %?
+16982_test|Does the amount spent on transport items of national tourists monotonically increase over the years ?
+16998_test|In how many years, is the payments made towards goods and services greater than 80000000000 US$?
+17091_test|What is the expenditure in staff compensation in 1999 ?
+17146_test|What is the difference between the adolescent fertility rate in 2000 and that in 2001 ?
+17169_test|What is the difference between the highest and the second highest percentage of females who are infected with hiv ?
+17175_test|What is the lpi of frequency of shipment arrival in 2012 ?
+17189_test|Across all years, what is the minimum urban population density ?
+17191_test|Across all years, what is the minimum expenditure in r&d ?
+17191_test|What is the expenditure in healthcare in 1999 ?
+17197_test|What is the export of goods and services in 2001 ?
+17220_test|Across all years, what is the minimum number of patent applications by non residents ?
+17233_test|What is the difference between the merchandise imports in 1998 and that in 2001 ?
+17240_test|In how many years, is the incurrence of foreign liabilities greater than 1.6 %?
+17260_test|In how many years, is the imports of goods and services greater than 500000000000 US$?
+17282_test|Across all years, what is the minimum percentage of school going girls ?
+17306_test|Across all years, what is the minimum food production index ?
+17360_test|What is the employment to population ratio(age 15-24) in 1999 ?
+17368_test|In how many years, is the gasoline price greater than 0.1 US$ per litre?
+17368_test|What is the gasoline price in 2006 ?
+17370_test|Across all years, what is the minimum enrollment rate in secondary education ?
+17371_test|Across all years, what is the minimum number of days to enforece a contract ?
+17440_test|Across all years, what is the minimum enrollment rate of female students ?
+17440_test|What is the difference between the highest and the second highest enrollment rate of male students ?
+17474_test|Across all years, what is the minimum number of infant deaths ?
+17482_test|What is the amount of emissions from human activities in 2000 ?
+17519_test|What is the amount of commercial service exports in 2005 ?
+17533_test|Across all years, what is the minimum percentage of firms using banks to finance investment ?
+17533_test|What is the percentage of firms using banks to finance working capital in 2007 ?
+17565_test|In how many years, is the employment to population ratio(female) greater than 50 %?
+17594_test|Across all years, what is the minimum percentage of children who received treatment for diarrhoea ?
+17614_test|Across all years, what is the minimum transition rate among male students ?
+17620_test|Across all years, what is the minimum income share held by highest 20% of the population ?
+17685_test|What is the percentage of urban population who used sanitation services in 1994 ?
+17729_test|Across all years, what is the minimum employment to population ratio(male) ?
+17729_test|What is the difference between the highest and the second highest employment to population ratio(female) ?
+17747_test|In how many years, is the percentage of underweighted female children greater than 13.2 %?
+17757_test|What is the difference between the highest and the second highest percentage of firms listed by public credit bureau ?
+17764_test|Across all years, what is the minimum percentage of rural population having access to electricity ?
+17809_test|In how many years, is the percentage of newborns who received vaccination for tetanus greater than 32 %?
+17809_test|What is the difference between the percentage of newborns who received vaccination for tetanus in 2003 and that in 2005 ?
+17841_test|Across all years, what is the minimum number of commercal bank branches ?
+17865_test|In how many years, is the net taxes in constant 2005 us$ greater than 480000000 units?
+17866_test|Across all years, what is the minimum percentage of fraud firms ?
+17881_test|What is the difference between the highest and the second highest number of researchers ?
+17886_test|What is the difference between the highest and the second highest expenditure in staff compensation ?
+17897_test|In how many years, is the merchandise imports greater than 1.1 %?
+17897_test|What is the merchandise exports in 2007 ?
+17926_test|In how many years, is the merchandise exports greater than 1.6 %?
+17928_test|In how many years, is the value added by  manufacturing chemicals greater than 15 %?
+18129_test|Across all years, what is the minimum expenditure on secondary education ?
+18246_test|What is the difference between the percentage of male labor force who received secondary education in 2007 and that in 2008 ?
+18305_test|Is the expenditure on primary education strictly greater than the expenditure on secondary education over the years ?
+18320_test|Is the amount of industrial nitrous oxide emissions strictly greater than the amount of methane emissions over the years ?
+18380_test|In how many years, is the percentage of total employers greater than 2.4 %?
+18380_test|Is the percentage of male employers strictly greater than the percentage of total employers over the years ?
+18419_test|Across all years, what is the minimum percentage of food imports ?
+18461_test|What is the percentage of labor force who received secondary education in 1991 ?
+18504_test|Across all years, what is the minimum expenditure on primary education ?
+18633_test|Is the percentage of male labor force who received primary education strictly greater than the percentage of male labor force who received tertiary education over the years ?
+18769_test|Across all years, what is the minimum amount received by the population participating in unemployment benefits programs ?
+18840_test|Across all years, what is the minimum value added by services ?
+19130_test|In how many years, is the percentage of liquid fuel emission greater than 36 %?
+19131_test|Across all years, what is the minimum percentage of female labor force above age 50 ?
+19131_test|What is the percentage of female labor force within the age group 15-20 in 2001 ?
+19149_test|Across all years, what is the minimum net disbursements made by czech republic ?
+19157_test|Is the rent towards oil strictly greater than the rent towards coal over the years ?
+19157_test|What is the rent towards oil in 1993 ?
+19457_test|What is the balance of payment of travel services in 2006 ?
+19487_test|Across all years, what is the minimum amount of co2 emissions from gaseous fuel ?
+19487_test|In how many years, is the amount of co2 emissions from liquid fuel greater than 320000 kt?
+19574_test|Is the percentage of male labor force within the age group 15-20 strictly greater than the percentage of male labor force above age 50 over the years ?
+19714_test|Across all years, what is the minimum percentage of female labor force who received primary education ?
+19933_test|Across all years, what is the minimum lpi rating of ease of arranging shipments ?
+19951_test|Across all years, what is the minimum percentage of workers in agriculture ?
+19951_test|In how many years, is the percentage of self employed workers greater than 30 %?
+20217_test|Is the cpia rating of management strictly greater than the cpia rating of business regulatory environment over the years ?
+20217_test|What is the cpia rating of business regulatory environment in 2010 ?
+20217_test|What is the difference between the cpia rating of debt policy in 2011 and that in 2014 ?
+20399_test|Across all years, what is the minimum lpi rating of tracking ability ?
+20516_test|Is the amount of aid given by who strictly greater than the amount of aid given by wfp over the years ?
+20601_test|What is the amount of loan disimbursed by international development association in 1982 ?
+20603_test|Across all years, what is the minimum cpia rating of fiscal policy ?
+20743_test|Is the amount spent on services strictly greater than the amount spent on labor taxes over the years ?
+20754_test|Across all years, what is the minimum amount of aid given by luxembourg ?
+20754_test|What is the amount of aid given by finland in 2006 ?
+20923_test|In how many years, is the amount of aid given by austria greater than 1200000 US$?
+21117_test|What is the percentage of workers in industry in 2008 ?
+21162_test|Across all years, what is the minimum percentage of male workers in agriculture ?
+21199_test|What is the percentage of female students in primary education in 1997 ?
+21241_test|In how many years, is the percentage of female workers in agriculture greater than 16 %?
+21317_test|What is the total unemployed labour force in 2008 ?
+21321_test|Across all years, what is the minimum percentage of pregnant women receiving prenatal care ?
+21332_test|Does the poverty gap at national poverty lines monotonically increase over the years ?
+21374_test|Across all years, what is the minimum antiretroviral therapy coverage ?
+21376_test|Across all years, what is the minimum unemployed female youth ?
+21380_test|Across all years, what is the minimum percentage of full-time male workers ?
+21396_test|Does the unemployed male youth population monotonically increase over the years ?
+21423_test|Do a majority of the years between 2009 and 2004 (inclusive) have currency composition of ppg debt greater than 0.4 % ?
+21442_test|Across all years, what is the minimum percentage of women justifying marital abuse ?
+21442_test|Do a majority of the years between 2012 and 2005 (inclusive) have percentage of women justifying marital abuse greater than 60 % ?
+21496_test|Across all years, what is the minimum number of international migrant stocks ?
+21548_test|Across all years, what is the minimum survival rate in primary education ?
+21548_test|What is the difference between the survival rate in primary education in 1982 and 1985 ?
+21552_test|Do a majority of the years between 2006 and 2007 (inclusive) have insurance and financial services greater than 2.4 % ?
+21562_test|What is the unemployed female youth in 2010 ?
+21571_test|Do a majority of the years between 1995 and 1991 (inclusive) have unemployed male youth greater than 17 % ?
+21571_test|What is the difference between the unemployed male youth in 1994 and 1995 ?
+21595_test|Does the time to clear exports through customs monotonically increase over the years ?
+21595_test|What is the time to clear exports through customs in 2006 ?
+21603_test|Across all years, what is the minimum number of people infected with hiv ?
+21625_test|Do a majority of the years between 1990 and 1991 (inclusive) have cereal yield greater than 400 kg per hectare ?
+21631_test|Across all years, what is the minimum survival rate ?
+21631_test|Do a majority of the years between 1989 and 2000 (inclusive) have survival rate greater than 88 % ?
+21633_test|Do a majority of the years between 2007 and 2008 (inclusive) have completeness of infant death reporting greater than 8 % ?
+21663_test|Does the number of community health workers monotonically increase over the years ?
+21695_test|Across all years, what is the minimum net official flows from un agencies ?
+21700_test|Across all years, what is the minimum total labor force ?
+21701_test|Across all years, what is the minimum number of children living with hiv ?
+21755_test|In how many years, is the cash surplus or deficit greater than 380000000 $ ?
+21770_test|Do a majority of the years between 2004 and 2005 (inclusive) have contributing female family workers greater than 6 % ?
+21770_test|What is the difference between the contributing female family workers in 2004 and 2005 ?
+21820_test|Do a majority of the years between 2004 and 2005 (inclusive) have cereal yield greater than 2800 kg per hectare ?
+21878_test|Do a majority of the years between 2001 and 2004 (inclusive) have government expenditure per student greater than 50 % ?
+21880_test|Across all years, what is the minimum insurance provided by non-residents ?
+21880_test|Do a majority of the years between 2010 and 2007 (inclusive) have insurance provided by non-residents greater than 0.7 % ?
+21921_test|Across all years, what is the maximum net financial flows from ibrd ?
+21925_test|Across all years, what is the minimum percentage of households where iodized salt is consumed ?
+21940_test|Across all years, what is the minimum percentage of agricultural irrigated land ?
+21956_test|Across all years, what is the minimum freight insurance ?
+22003_test|Across all years, what is the minimum unemployed female youth ?
+22003_test|Do a majority of the years between 2005 and 2008 (inclusive) have unemployed female youth greater than 17 % ?
+22010_test|Across all years, what is the minimum birth registration ?
+22010_test|Does the birth registration monotonically increase over the years ?
+22083_test|Across all years, what is the minimum total unemployed population ?
+22117_test|Do a majority of the years between 2009 and 2005 (inclusive) have birth registration greater than 48 % ?
+22117_test|Does the birth registration monotonically increase over the years ?
+22136_test|Does the contraceptive prevalence monotonically increase over the years ?
+22139_test|Do a majority of the years between 2001 and 2005 (inclusive) have total interest payments on external debt greater than 3.4 % ?
+22148_test|Across all years, what is the minimum distance to frontier score ?
+22148_test|Do a majority of the years between 2013 and 2010 (inclusive) have distance to frontier score greater than 18  ?
+22163_test|Across all years, what is the minimum unemployed female youth ?
+22164_test|Across all years, what is the minimum amount of ict goods imports ?
+22191_test|What is the female population in 1980 ?
+22208_test|Do a majority of the years between 2006 and 2003 (inclusive) have amount of energy used greater than 800 kg ?
+22209_test|Does the unemployed male youth population monotonically increase over the years ?
+22216_test|Across all years, what is the minimum percentage of households where iodized salt is consumed ?
+22243_test|Across all years, what is the minimum insurance provided by non-residents ?
+22273_test|Across all years, what is the minimum percentage of children who received dpt vaccine ?
+22300_test|Across all years, what is the minimum birth registration ?
+22305_test|Across all years, what is the minimum contraceptive prevalence ?
+22305_test|What is the difference between the contraceptive prevalence in 1985 and 1987 ?
+22309_test|Across all years, what is the minimum distance to frontier score ?
+22377_test|Do a majority of the years between 2009 and 2007 (inclusive) have electric power consumption greater than 900 kWh per capita ?
+22396_test|Across all years, what is the minimum total imports ?
+22409_test|What is the number of days to obtain operating license in 2009 ?
+22540_test|In how many countries, is the earnings from merchandise imports greater than 22 % ?
+22570_test|Across all countries, what is the minimum amount paid for imports ?
+22575_test|What is the difference between the amount of methane emissions in Austria and that in Finland ?
+22581_test|What is the difference between two consecutive major ticks on the Y-axis ?
+22629_test|What is the difference between the highest and the second highest number of under-five deaths ?
+22633_test|Across all countries, what is the minimum percentage of raw materials imports ?
+22718_test|In how many countries, is the percentage of labor force who received tertiary education greater than 50 % ?
+22780_test|What is the difference between the highest and the second highest undisbursed external debt of official creditors ?
+22811_test|Across all countries, what is the minimum percentage of manufactures imports ?
+23081_test|In how many countries, is the percentage of female population who survived till age of 65 greater than 76 % ?
+23081_test|What is the difference between the highest and the second highest percentage of male population who survived till age of 65 ?
+23093_test|What is the difference between two consecutive major ticks on the Y-axis ?
+23173_test|In how many countries, is the employment in industrial sector in 1980 greater than 10 %?
+23173_test|What is the difference between the employment in industrial sector in 1980 in Israel and that in Italy ?
+23366_test|What is the difference between the highest and the second highest merchandise exports ?
+23368_test|In how many countries, is the percentage of female teachers in secondary schools greater than 68 % ?
+23578_test|What is the difference between two consecutive major ticks on the Y-axis ?
+23592_test|What is the difference between two consecutive major ticks on the Y-axis ?
+23669_test|In how many countries, is the employment in agricultural sector in 1981 greater than 4 %?
+23676_test|In how many countries, is the entrance age of children in lower secondary education greater than 6 years ?
+23737_test|Across all countries, what is the minimum merchandise imports ?
+23952_test|Across all countries, what is the minimum number of technicians ?
+23971_test|In how many countries, is the percentage of male labor force within the age group 20-50 greater than 72 % ?
+24168_test|In how many countries, is the amount of loans disbursed in 1970 greater than 240000000 US$?
+24168_test|What is the difference between two consecutive major ticks on the Y-axis ?
+24226_test|In how many countries, is the average working hour of children involved in only work greater than 10 hours ?
+24515_test|Across all countries, what is the minimum percentage of female labor force who received tertiary education ?
+24515_test|In how many countries, is the percentage of female labor force who received primary education greater than 64 % ?
+24518_test|In how many countries, is the annual population growth in 1962 greater than 0.2 %?
+24565_test|Is the difference between the number of documents required per shipment to export goods in 2005 in Albania and Upper middle income greater than the difference between the number of documents required per shipment to export goods in 2006 in Albania and Upper middle income ?
+24575_test|In how many countries, is the percentage of non-pregnant anaemic women greater than the average percentage of non-pregnant anaemic women taken over all countries ?
+24655_test|Is the difference between the measure of agricultural productivity in 1981 in Bhutan and Botswana greater than the difference between the measure of agricultural productivity in 1980 in Bhutan and Botswana ?
+24682_test|In how many countries, is the percentage of amount earned from merchandise exports in 1961 greater than 84 %?
+24755_test|In how many countries, is the amount spent on the passenger transport items of international tourists in 1995 greater than 150000000 US$?
+24889_test|In how many countries, is the number of secure internet servers in 2003 greater than 340 ?
+24990_test|In how many countries, is the percentage of area under arable land greater than 36 % ?
+25049_test|Across all countries, what is the minimum number of applications filed in 1961 ?
+25058_test|What is the difference between two consecutive major ticks on the Y-axis ?
+25110_test|What is the difference between two consecutive major ticks on the Y-axis ?
+25293_test|Is the difference between the percentage of unemployed male labor force in 1982 in Korea (Republic) and Netherlands greater than the difference between the percentage of unemployed male labor force in 1980 in Korea (Republic) and Netherlands ?
+25366_test|Is the difference between the percentage of electricity produced by natural gas in South Asia and Sub-Saharan Africa (all income levels) greater than the difference between the percentage of electricity produced by coal in South Asia and Sub-Saharan Africa (all income levels) ?
+25366_test|What is the difference between two consecutive major ticks on the Y-axis ?
+25378_test|What is the difference between two consecutive major ticks on the Y-axis ?
+25400_test|In how many countries, is the adolescent fertility rate in 1961 greater than 110 ?
+25410_test|Across all countries, what is the minimum urban population in 1961 ?
+25410_test|What is the difference between the urban population in 1960 in Belgium and that in Benin ?
+25444_test|What is the difference between two consecutive major ticks on the Y-axis ?
+25474_test|Across all countries, what is the minimum amount of aid given by portugal ?
+25487_test|Is the difference between the percentage of long-term unemployed male population in 1980 in Canada and United States greater than the difference between the percentage of long-term unemployed male population in 1981 in Canada and United States ?
+25487_test|What is the difference between the percentage of long-term unemployed male population in 1981 in Australia and that in Canada ?
+25490_test|What is the difference between the percentage of amount earned from merchandise imports in 1961 in High income: OECD and that in High income: nonOECD ?
+25551_test|Across all countries, what is the minimum percentage of children infected with anaemia in in 1990 ?
+25558_test|Across all countries, what is the minimum female population ?
+25609_test|In how many countries, is the earnings from merchandise exports greater than the average earnings from merchandise exports taken over all countries ?
+25622_test|Is the difference between the number of tourist departures in 1995 in Nicaragua and Peru greater than the difference between the number of tourist departures in 1997 in Nicaragua and Peru ?
+25625_test|In how many countries, is the number of documents required per shipment to import goods in 2006 greater than 6 ?
+25635_test|Across all countries, what is the minimum emission of sf6 gas ?
+25737_test|What is the difference between the percentage total merchandise imports in 1992 in China and that in Denmark ?
+25766_test|What is the difference between two consecutive major ticks on the Y-axis ?
+25878_test|What is the difference between two consecutive major ticks on the Y-axis ?
+26104_test|Across all countries, what is the minimum female life expectancy at birth in 1961 ?
+26124_test|What is the difference between the female life expectancy at birth in 1961 in Iraq and that in Jamaica ?
+26194_test|Across all countries, what is the minimum percentage of female labor force in 1990 ?
+26302_test|What is the difference between two consecutive major ticks on the Y-axis ?
+26324_test|Is the difference between the earnings from national visitors in 1997 in Ireland and Italy greater than the difference between the earnings from national visitors in 1996 in Ireland and Italy ?
+26676_test|In how many countries, is the male adult literacy rate greater than 56 % ?
+26705_test|Across all countries, what is the minimum balance of payments of travel services ?
+26705_test|In how many countries, is the balance of payments of transport services greater than the average balance of payments of transport services taken over all countries ?
+26709_test|What is the difference between two consecutive major ticks on the Y-axis ?
+26799_test|Is the difference between the amount spent on the transport items of international tourists in 1997 in Bolivia and Brazil greater than the difference between the amount spent on the transport items of international tourists in 1995 in Bolivia and Brazil ?
+27136_test|In how many countries, is the net national savings greater than the average net national savings taken over all countries ?
+27157_test|Is the difference between the percentage of co2 emissions from other sectors in Azerbaijan and Guatemala greater than the difference between the percentage of co2 emissions from resident buildings and public services in Azerbaijan and Guatemala ?
+27187_test|What is the difference between two consecutive major ticks on the Y-axis ?
+27302_test|In how many countries, is the net savings(excluding particulate emission damage) greater than 4 % ?
+27313_test|What is the difference between the cost of communications and computers in 2005 in Singapore and that in Slovenia ?
+27313_test|What is the difference between two consecutive major ticks on the Y-axis ?
+27340_test|Is the difference between the number of applications filed in 1960 in Canada and Korea (Republic) greater than the difference between the number of applications filed in 1961 in Canada and Korea (Republic) ?
+27512_test|In how many countries, is the under-5 mortality rate greater than the average under-5 mortality rate taken over all countries ?
+27672_test|What is the difference between the earnings from national visitors in 1997 in Morocco and that in Myanmar ?
+27708_test|Is the difference between the percentage of amount earned from merchandise imports in 1962 in France and Gabon greater than the difference between the percentage of amount earned from merchandise imports in 1960 in France and Gabon ?
+27778_test|In how many countries, is the percentage of employed children who are attending school greater than the average percentage of employed children who are attending school taken over all countries ?
+28008_test|In how many countries, is the cpia rating of trade greater than 3.8  ?
+28008_test|Is the difference between the cpia rating of budget management in Armenia and Micronesia greater than the difference between the cpia rating of financial sector in Armenia and Micronesia ?
+28045_test|Across all countries, what is the minimum percentage of benefits received due to social insurance programs ?
+28078_test|Across all countries, what is the minimum proportion of the female labor force who participated in production in 1991 ?
+28287_test|Across all countries, what is the minimum amount paid to workers in 2005 ?
+28298_test|Across all countries, what is the minimum percentage of amount earned from merchandise exports in 1962 ?
+28306_test|What is the difference between two consecutive major ticks on the Y-axis ?
+28317_test|Across all countries, what is the minimum gross intake ratio(female) ?
+28363_test|What is the difference between two consecutive major ticks on the Y-axis ?
+28407_test|Is the difference between the amount earned from merchandise exports in 1962 in El Salvador and Finland greater than the difference between the amount earned from merchandise exports in 1961 in El Salvador and Finland ?
+28407_test|What is the difference between two consecutive major ticks on the Y-axis ?
+28570_test|What is the difference between two consecutive major ticks on the Y-axis ?
+28625_test|In how many countries, is the amount earned from exports greater than the average amount earned from exports taken over all countries ?
+28625_test|What is the difference between the amount earned from exports in Philippines and that in Guinea-Bissau ?
+28656_test|Across all countries, what is the minimum global emissions of Hydrofluorocarbons in 2008 ?
+28656_test|What is the difference between two consecutive major ticks on the Y-axis ?
+28801_test|What is the urban population growth in Lao PDR ?
+28826_test|Across all countries, what is the minimum employment to population ratio(male) ?
+28839_test|Is the difference between the value added by manufacturing to the total GDP in 1960 in Burkina Faso and Sub-Saharan Africa (developing only) greater than the difference between the value added by manufacturing to the total GDP in 1962 in Burkina Faso and Sub-Saharan Africa (developing only) ?
+28844_test|Across all countries, what is the minimum percentage of self employed male workers ?
+28893_test|In how many countries, is the persistence rate of male students greater than the average persistence rate of male students taken over all countries ?
+29062_test|In how many countries, is the Amount of goods and services exports in 1960 greater than 9000000000 LCU?
+29279_test|Across all countries, what is the minimum percentage of imports to different countries in 1963 ?
+29326_test|Is the difference between the amount of loan disimbursed by international development association in Honduras and Lesotho greater than the difference between the amount of loan disimbursed by international monetary fund in Honduras and Lesotho ?
+29345_test|Across all countries, what is the minimum female labor force participation rate in 1993 ?
+29382_test|In how many countries, is the time to export greater than 15 days ?
+29877_test|Across all countries, what is the minimum lower secondary school starting age of children in 1972 ?
+29877_test|What is the difference between two consecutive major ticks on the Y-axis ?
+29978_test|Is the difference between the natural gas rent in 1972 in Australia and World greater than the difference between the natural gas rent in 1970 in Australia and World ?
+30023_test|In how many countries, is the value added by services sector greater than 640000000 US$ ?
+30123_test|What is the difference between two consecutive major ticks on the Y-axis ?
+30167_test|In how many countries, is the merchandise exports greater than the average merchandise exports taken over all countries ?
+30186_test|In how many countries, is the net bilateral aid flow in 1960 greater than 180000000 US$?
+30186_test|Is the difference between the net bilateral aid flow in 1962 in East Asia (developing only) and Latin America(developing only) greater than the difference between the net bilateral aid flow in 1960 in East Asia (developing only) and Latin America(developing only) ?
+30233_test|Is the difference between the total exports of goods and services in 1961 in Austria and Belgium greater than the difference between the total exports of goods and services in 1962 in Austria and Belgium ?
+30233_test|What is the difference between two consecutive major ticks on the Y-axis ?
+30239_test|Across all countries, what is the minimum CPIA rating in 2006 ?
+30527_test|In how many countries, is the net taxes on products in 1961 greater than 60000000 US$?
+30602_test|What is the difference between the CPIA rating in 2008 in Sierra Leone and that in Solomon Islands ?
+30719_test|Across all countries, what is the minimum share of the income held by second 20% of the population ?
+30788_test|Across all countries, what is the minimum percentage of amount spent on goods and services ?
+30869_test|Across all countries, what is the minimum balance of payments of ICT services in 2006 ?
+30869_test|What is the difference between two consecutive major ticks on the Y-axis ?
+30880_test|Across all countries, what is the minimum labor force participation rate in 1991 ?
+30900_test|In how many countries, is the number of atms greater than 44  ?
+30910_test|Across all countries, what is the minimum percentage of economically active male population ?
+30910_test|In how many countries, is the percentage of economically active male population greater than the average percentage of economically active male population taken over all countries ?
+30932_test|Across all countries, what is the minimum proportion of the male population that is economically active in 1983 ?
+30932_test|What is the difference between two consecutive major ticks on the Y-axis ?
+30994_test|What is the difference between two consecutive major ticks on the Y-axis ?
+31065_test|In how many countries, is the cost of damage due to depletion of water greater than 3.6 % ?
+31164_test|Across all countries, what is the minimum percentage of population listed by a public credit bureau in 2005 ?
+31199_test|What is the difference between two consecutive major ticks on the Y-axis ?
+31241_test|In how many countries, is the percentage of electricity produced by hydroelectric sources greater than 44 % ?
+31275_test|Across all countries, what is the minimum percentage of exports to different countries in 1963 ?
+31298_test|In how many countries, is the agricultural production index in 1964 greater than 22 ?
+31336_test|In how many countries, is the percentage of self employed female workers greater than 32 % ?
+31461_test|In how many countries, is the percentage of male labour force greater than the average percentage of male labour force taken over all countries ?
+31544_test|Across all countries, what is the minimum percentage of the population ages 15 to 64 in 1960 ?
+31585_test|In how many countries, is the total payments made towards primary income in 2006 greater than 360000000000 US$?
+31585_test|What is the difference between two consecutive major ticks on the Y-axis ?
+31884_test|In how many countries, is the co2 intensity greater than 1.7 kg ?
+31884_test|What is the difference between the highest and the second highest co2 intensity ?
+32163_test|Across all countries, what is the minimum earning from merchandise trade ?
+32291_test|Across all countries, what is the minimum antiretroviral therapy coverage ?
+32291_test|What is the difference between the highest and the second highest antiretroviral therapy coverage ?
+32341_test|What is the difference between the highest and the second highest population ?
+32349_test|Across all countries, what is the minimum percentage of repeaters ?
+32375_test|What is the difference between the highest and the second highest debt service ?
+32400_test|In how many countries, is the female population greater than 50 % ?
+32400_test|What is the difference between the highest and the second highest female population ?
+32430_test|In how many countries, is the co2 intensity greater than 0.1 kg ?
+32744_test|What is the difference between the highest and the second highest distance to frontier score ?
+32921_test|In how many countries, is the use of imf credit in dod greater than 250000000 US$ ?
+33004_test|In how many countries, is the consumption of fixed capital greater than 10.4 % ?
+33068_test|Across all countries, what is the minimum percentage of trained female teachers ?
+33094_test|What is the difference between the highest and the second highest number of required meetings with tax officials ?
+33094_test|What is the difference between the number of required meetings with tax officials in Philippines and Samoa ?
+33186_test|Across all countries, what is the minimum percentage of part-time male workers ?
+33186_test|What is the difference between the highest and the second highest percentage of part-time male workers ?
+33245_test|In how many countries, is the unemployed males population greater than 1.2 % ?
+33392_test|In how many countries, is the number of married women who are not using contraception greater than 5.2 % ?
+33503_test|Across all countries, what is the minimum consumption of fixed capital ?
+33503_test|In how many countries, is the consumption of fixed capital greater than 9 % ?
+33587_test|In how many countries, is the production of clean energy greater than 27 % ?
+5606_test|Across all years, what is the minimum number of technicians ?
+5631_test|Across all countries, what is the maximum net disbursements of loan from world bank ?
+5633_test|What is the difference between two consecutive major ticks on the X-axis ?
+5693_test|Across all years, what is the minimum imports of goods and services ?
+5753_test|Across all years, what is the minimum percentage of registered firms ?
+5753_test|In how many years, is the percentage of registered firms greater than 52 % ?
+5753_test|What is the difference between two consecutive major ticks on the X-axis ?
+5797_test|Across all years, what is the minimum survival rate of female students in primary education ?
+5797_test|What is the difference between two consecutive major ticks on the X-axis ?
+5837_test|Is the difference between the amount of co2 emissions from gaseous fuel in Mongolia and Singapore greater than the difference between the amount of co2 emissions from liquid fuel in Mongolia and Singapore ?
+5864_test|Across all countries, what is the minimum value added by manufacturing food and tobacco ?
+5882_test|Across all countries, what is the maximum amount spent on other expenses ?
+6020_test|In how many years, is the percentage of females employed in Private sector in Turkey greater than 52 % ?
+6020_test|What is the difference between two consecutive major ticks on the X-axis ?
+6029_test|Across all years, what is the minimum employment to population ratio(age 15+) ?
+6029_test|What is the difference between the employment to population ratio(age 15+) in 1995 and that in 1997 ?
+6084_test|What is the difference between the highest and the second highest birth rate ?
+6085_test|What is the difference between the highest and the second highest percentage of obese male children ?
+6148_test|In how many countries, is the fertility rate greater than 60  ?
+6148_test|What is the difference between two consecutive major ticks on the X-axis ?
+6285_test|What is the difference between the highest and the second highest annual growth rate in quasi money ?
+6362_test|Across all years, what is the minimum amount of private funds spent in healthcare ?
+6607_test|What is the difference between two consecutive major ticks on the X-axis ?
+6628_test|What is the difference between the highest and the second highest forest rent ?
+6628_test|What is the difference between two consecutive major ticks on the X-axis ?
+6728_test|What is the difference between two consecutive major ticks on the X-axis ?
+6924_test|In how many countries, is the amount collected as tax on income greater than 2600000000000 $ ?
+7037_test|In how many years, is the value added by manufacturing food and tobacco greater than 38 % ?
+7104_test|Across all years, what is the minimum amount paid for imports ?
+7221_test|What is the difference between the highest and the second highest amount of nitrous oxide emissions ?
+7235_test|Is the difference between the expenditure on tertiary education in Guyana and Andorra greater than the difference between the expenditure on primary education in Guyana and Andorra ?
+7240_test|What is the difference between the highest and the second highest enrolment ratio of female students in secondary schools in Solomon Islands ?
+7240_test|What is the difference between two consecutive major ticks on the X-axis ?
+7248_test|Across all countries, what is the minimum cost of damage caused due to CO2 emissisons in 1971 ?
+7262_test|Across all countries, what is the minimum net disbursements made by poland ?
+7308_test|What is the difference between two consecutive major ticks on the X-axis ?
+7439_test|What is the difference between the highest and the second highest rating of statistical capacity in 2004 ?
+7616_test|What is the difference between two consecutive major ticks on the X-axis ?
+7729_test|Is the difference between the cost of communications and computers in 2005 in Georgia and Greece greater than the difference between the cost of communications and computers in 2007 in Georgia and Greece ?
+7735_test|Across all years, what is the minimum percentage of female part-time workers in El Salvador ?
+7735_test|In how many years, is the percentage of female part-time workers in France greater than 12 % ?
+7744_test|Across all years, what is the minimum current expenditures in secondary public institutions in Niger ?
+7758_test|In how many years, is the percentage of male labor force who received primary education greater than 66 % ?
+7786_test|Across all countries, what is the minimum arms imports ?
+7786_test|In how many countries, is the arms exports greater than 9000000000  ?
+7898_test|Across all years, what is the minimum percentage of electricity produced by natural gas ?
+7925_test|In how many years, is the balance of payment of travel services greater than 31 % ?
+7977_test|What is the difference between two consecutive major ticks on the X-axis ?
+8076_test|What is the difference between the amount spent on the passenger transport items of international tourists in 1997 in Latvia and that in Lesotho ?
+8168_test|What is the difference between two consecutive major ticks on the X-axis ?
+8205_test|What is the difference between two consecutive major ticks on the X-axis ?
+8275_test|Across all countries, what is the minimum percentage of freshwater withdrawal for industry ?
+8451_test|Across all countries, what is the minimum IMF credit in the Department of Defense in 1971 ?
+8461_test|Across all years, what is the minimum percentage of amount earned from merchandise imports in Azerbaijan ?
+8461_test|In how many years, is the percentage of amount earned from merchandise imports in Korea (Republic) greater than 28 % ?
+8461_test|What is the difference between two consecutive major ticks on the X-axis ?
+8588_test|What is the difference between two consecutive major ticks on the X-axis ?
+8680_test|In how many years, is the amount paid to workers in Middle East & North Africa (developing only) greater than 9000000000 US$ ?
+8685_test|What is the difference between two consecutive major ticks on the X-axis ?
+8806_test|In how many years, is the proportion of the male labor force who participated in production in Moldova greater than 38 % ?
+8856_test|Is the difference between the percentage of amount earned from merchandise exports in Bermuda in 2008 and 2011 greater than the difference between the percentage of amount earned from merchandise exports in Cyprus in 2008 and 2011 ?
+8871_test|Across all countries, what is the minimum percentage of amount earned from merchandise imports in 1962 ?
+8887_test|What is the difference between two consecutive major ticks on the X-axis ?
+8953_test|What is the difference between two consecutive major ticks on the X-axis ?
+8959_test|In how many years, is the percentage of amount earned from merchandise exports in Turkmenistan greater than 1.1 % ?
+9066_test|In how many countries, is the merchandise imports greater than the average merchandise imports taken over all countries ?
+9221_test|Across all years, what is the minimum expenditure towards education in Luxembourg ?
+9389_test|In how many years, is the total undisbursed external debt in Somalia greater than 60000000 US$ ?
+9389_test|Is the difference between the total undisbursed external debt in Somalia in 2006 and 2007 greater than the difference between the total undisbursed external debt in Guyana in 2006 and 2007 ?
+9446_test|Is the difference between the number of internet users in Botswana in 2000 and 2003 greater than the difference between the number of internet users in Central Europe in 2000 and 2003 ?
+9493_test|What is the difference between the export of goods as percentage of GDP in 1961 in Europe(all income levels) and that in Latin America(all income levels) ?
+9538_test|Across all countries, what is the minimum number of refugees by country of asylum ?
+9557_test|Across all countries, what is the minimum percentage of female students in secondary vocational education ?
+9557_test|In how many countries, is the percentage of female students in secondary vocational education greater than 12 % ?
+9593_test|In how many countries, is the percentage of urban population having access to drinking water in 1990 greater than 52 % ?
+9593_test|What is the difference between two consecutive major ticks on the X-axis ?
+9632_test|Across all years, what is the minimum amount of CO2 emitted in Japan ?
+9698_test|Across all countries, what is the minimum percentage of female labor force above age 50 ?
+9784_test|Across all years, what is the minimum urban population in Macao ?
+9784_test|Is the difference between the urban population in Jordan in 1964 and 1965 greater than the difference between the urban population in Qatar in 1964 and 1965 ?
+9883_test|Is the difference between the percentage of long-term unemployed population in 1982 in Canada and Japan greater than the difference between the percentage of long-term unemployed population in 1981 in Canada and Japan ?
+9896_test|Across all countries, what is the minimum percentage of revenue generated by taxes on income ?
+9957_test|What is the difference between the percentage of population within the age-group 0-14 in 1999 and that in 2002 ?

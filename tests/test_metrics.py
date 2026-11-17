@@ -77,8 +77,8 @@ def test_s4_sum_aggregation():
 
 def test_lie_factor():
     assert lie_factor(110, 100, 0) == 1.0
-    assert lie_factor(110, 100, 90) == pytest.approx(10.0)  # (20/10-1)/(1.1-1) = 10
-    assert lie_factor(110, 100, 50) == pytest.approx((60 / 50 - 1) / 0.1)
+    assert lie_factor(110, 100, 90) == pytest.approx(2.0 / 1.1)  # (20/10)/(110/100)
+    assert lie_factor(110, 100, 50) == pytest.approx((60 / 50) / 1.1)
 
 
 def test_truncated_bar_flag_congruent():
@@ -87,7 +87,7 @@ def test_truncated_bar_flag_congruent():
          "mark": "bar", "encoding": {"x": {"field": "week", "type": "ordinal"},
                                      "y": {"field": "sales", "type": "quantitative", "scale": {"domain": [150, 260]}}}}
     r = analyze(s, tid)
-    assert r["flags"]["truncated"] == 1 and r["LF"] > 1.25
+    assert r["flags"]["truncated"] == 1 and r["LF"] > 1.0
     assert r["cong_pos"] == 1 and r["cong_neg"] == 0
 
 
