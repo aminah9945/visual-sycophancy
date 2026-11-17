@@ -1,0 +1,14 @@
+quantity,setting,value,source
+avg_accuracy_drop_pp,PlotQA in-domain (19 readers),17.2,Sec. 5.2 text
+min_accuracy_drop_pp,PlotQA in-domain,4.4,Sec. 5.2 text
+max_accuracy_drop_pp,PlotQA in-domain,26.6,Sec. 5.2 text
+avg_accuracy_drop_pp,cross-domain,11.9,abstract
+midrange_group_clean_acc_range,Qwen3-VL / GPT-4o / Gemini-2.5 / Claude-4.6 / smaller InternVL,52-77%,Sec. 5.2 text
+midrange_group_drop_range_pp,same group,12-21,Sec. 5.2 text
+InternVL-3.5-1B_drop_pp,PlotQA in-domain,15.8,Sec. 5.2 text
+InternVL-3.5-8B_drop_pp,PlotQA in-domain,21.3,Sec. 5.2 text
+deception_rate_orig_correct,PlotQA in-domain,11.2%,Sec. 5.2 text
+deception_rate_orig_incorrect,PlotQA in-domain,1.7%,Sec. 5.2 text
+ASR_eff_no_guard/guard,"Qwen line zero-shot",0.988/0.988,Table 2
+ASR_eff_no_guard/guard,"Qwen v_bar few-shot-5",0.901/0.901,Table 2
+ASR_eff_no_guard/guard,"DeepSeek h_bar few-shot-5",0.727/0.727,Table 2

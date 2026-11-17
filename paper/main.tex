@@ -30,7 +30,7 @@
 
 \begin{abstract}
 \todo{DRAFT -- finalise after experiments; the brief requires the abstract to report actual findings only.}
-Large language models (LLMs) are increasingly used as the front end of exploratory visual analysis, turning a user's request into a chart specification. Prior work shows that LLMs can be \emph{instructed} by a malicious user to produce misleading charts, but it does not ask whether a \emph{benign} user who merely states a belief (e.g., ``I think the campaign boosted sales'') causes the model to bend design and data-selection choices toward that belief. We call this failure mode \emph{visual sycophancy}. We formalise it through two data-grounded quantities, the Effect Inflation (EI) of a chart relative to the full data and the Visual Sycophancy Rate (VSR), and we construct VisSyco, a synthetic benchmark with planted ground truth (supporting, null and contradicting effects) and planted cherry-pickable subsets. We propose Context-Grounded Chart Auditing (CGCA), which executes the generated Vega-Lite specification against the source data, computes EI and encoding-level misleader flags deterministically, and returns numerical, data-derived feedback to the generator for revision, falling back to an overview-plus-detail context view. We reproduce a subset of the ChartAttack baseline and compare CGCA with its prompt-based guard under compatible metrics, and we provide a visual analytics interface for auditing model behaviour. \todo{Key quantitative findings.} Code: \url{https://github.com/<user>/<repo>}
+Large language models (LLMs) are increasingly used as the front end of exploratory visual analysis, turning a user's request into a chart specification. Prior work shows that LLMs can be \emph{instructed} by a malicious user to produce misleading charts, but it does not ask whether a \emph{benign} user who merely states a belief (e.g., ``I think the campaign boosted sales'') causes the model to bend design and data-selection choices toward that belief. We call this failure mode \emph{visual sycophancy}. We formalise it through two data-grounded quantities, the Effect Inflation (EI) of a chart relative to the full data and the Visual Sycophancy Rate (VSR), and we construct VisSyco, a synthetic benchmark with planted ground truth (supporting, null and contradicting effects) and planted cherry-pickable subsets. We propose Context-Grounded Chart Auditing (CGCA), which executes the generated Vega-Lite specification against the source data, computes EI and encoding-level misleader flags deterministically, and returns numerical, data-derived feedback to the generator for revision, falling back to an overview-plus-detail context view. We reproduce a subset of the ChartAttack baseline and compare CGCA with its prompt-based guard under compatible metrics, and we provide a visual analytics interface for auditing model behaviour. \todo{Key quantitative findings.} Code: \url{https://github.com/aminah9945/visual-sycophancy}
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -108,18 +108,28 @@ ChartAttack~\cite{ortizbarajas2026chartattack} & yes & no & excluded & prompt gu
 For S1 the generating process is
 \begin{equation}
 \begin{split}
-y_t ={}& \mu + \beta\,\tfrac{t}{T} + \delta_g\,\sigma\,\mathbb{1}[t \ge t_0] \\
-&+ c\,\sigma\,\mathbb{1}[t \in W^\ast] + \varepsilon_t,\qquad \varepsilon_t \sim \mathcal{N}(0,\sigma^2),
+y_t ={}& \mu + a\sin(2\pi t/13) + \gamma_g\,\mathbb{1}[t \ge t_0] + c\,\sigma\,\mathbb{1}[t \in W^+] \\
+&- \tfrac{c}{3}\,\sigma\,\mathbb{1}[t \in W^-] + \varepsilon_t,\qquad \varepsilon_t \sim \mathcal{N}(0,\sigma^2),
 \end{split}
 \label{eq:gen}
 \end{equation}
-where $\delta_g \in \{+\delta, 0, -\delta\}$ sets the ground-truth condition $g$, $W^\ast$ is a short window straddling $t_0$, and $c$ is a local bump such that the effect computed inside $W^\ast$ is positive in every condition. S2--S4 use analogous group-level formulations. Each table is accepted only if (i) the full-data effect has the intended sign and magnitude and (ii) the cherry subset shows a positive effect of at least $\delta_c$ (rejection sampling). Defaults: $\delta=0.8$, $\delta_c=0.8$, $\sigma=1$ (standardised units).
+with $\mu=200$, $a=6$, $\sigma=8$, $t_0=27$, and $W^\ast=W^-\cup W^+$ the window of weeks 24--31 straddling $t_0$ ($W^-$: 24--26, $W^+$: 27--31). The bump $c$ makes the effect inside $W^\ast$ positive in every condition, and the step $\gamma_g$ is set by bisection so that the full-table effect (Eq.~\ref{eq:delta}) equals $\delta_g + u$, $u\sim\mathcal{U}(-0.08,0.08)$, with $\delta_g \in \{+0.8, 0, -0.8\}$ for the conditions \emph{supports}, \emph{null} and \emph{contradicts} (relative to $h^+$). S2--S4 use the same construction at group level: in S2 one region (North) receives a post-policy rise and a common step sets the overall effect; in S3 the largest segment strongly favours product A while A's satisfaction in the other segments is shifted to set the customer-weighted overall effect (a Simpson-style reversal); in S4 four of six departments are trained, so summing (rather than averaging) productivity favours the trained group whatever the true effect. Each table is accepted only if (i) $|\Delta(D)-\delta_g|\le 0.15$ and (ii) the cherry subset shows an effect of at least $\delta_c=0.8$ in favour of $h^+$ (rejection sampling).
 
-\emph{Size and partitions.} 4 scenarios $\times$ 3 conditions $\times$ 3 seeds $=36$ tables (52--96 rows each; small enough to place the full table in the prompt so that the model can see what it selects). Seed 1 (12 tables) is the development split used only to calibrate audit thresholds; seeds 2--3 (24 tables) form the test split. No model is trained, so no training split is required. A dataset statistics table and sample rows will be provided in the final paper.
+\emph{Size and partitions.} 4 scenarios $\times$ 3 conditions $\times$ 3 seeds $=36$ tables (12--96 rows each; small enough to place the full table in the prompt so that the model can see what it selects). Seed 1 (12 tables) is the development split used only to calibrate audit thresholds; seeds 2--3 (24 tables) form the test split. No model is trained, so no training split is required. Table~\ref{tab:vissyco} summarises the tables, Table~\ref{tab:vissyco-sample} shows sample rows and Fig.~\ref{fig:vissyco} shows one table per scenario with its cherry-pickable region. All 36 tables satisfy both acceptance criteria (automated test \texttt{tests/test\_data.py}).
 
-\emph{Prompts.} For each table we create three prompts that share an identical task description $T$ (e.g., ``Create a Vega-Lite v5 chart that helps me understand weekly sales and the campaign that started in week 27. Return only JSON.'') and differ only by an appended sentence: neutral $h_\varnothing$ (``I would like to understand what happened.''), supporting $h^+$ (``I am fairly confident the campaign increased sales.'') or opposing $h^-$ (``I am fairly confident the campaign decreased sales.''). Holding $T$ fixed is essential: if the hypothesis prompt also changed the task (e.g., ``show how the campaign boosted sales''), then focusing on the campaign window would be a correct reading of the request rather than sycophancy.
+\input{tables/vissyco_stats}
+\input{tables/vissyco_sample}
 
-\textbf{(b) AttackViz (baseline reproduction).} We use the publicly released AttackViz corpus of ChartAttack~\cite{ortizbarajas2026chartattack}, derived from PlotQA~\cite{methani2020plotqa}, with chart JSON annotations, chart-related questions, correct answers and misleader annotations. We draw a stratified random subset of the in-domain PlotQA test split ($N=500$; horizontal bar, vertical bar and line charts) for reproduction. No additional preprocessing is applied beyond the released pipeline; any deviation will be documented.
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/vissyco_scenarios.pdf}
+\caption{One VisSyco table per scenario in the \emph{contradicts} condition (true effect $\approx -0.8$ SD). Shaded: the planted cherry-pick (S1 window, S2 region North, S3 segment ``Professionals''); S4 contrasts mean (blue) and sum (orange) aggregation.}
+\label{fig:vissyco}
+\end{figure*}
+
+\emph{Prompts.} For each table we create three prompts that share an identical task description $T$ (e.g., ``Create a Vega-Lite v5 chart that helps me understand weekly sales and the marketing campaign that started in week 27.'') and differ only by an appended sentence: neutral $h_\varnothing$ (``I would like to understand what happened.''), supporting $h^+$ (``I am fairly confident the campaign increased sales.'') or opposing $h^-$ (``I am fairly confident the campaign decreased sales.''). The full table is inserted as CSV, and the prompt ends with ``Return only a valid Vega-Lite v5 JSON specification. Use the inline data values provided.'' Holding $T$ fixed is essential: if the hypothesis prompt also changed the task (e.g., ``show how the campaign boosted sales''), then focusing on the campaign window would be a correct reading of the request rather than sycophancy. All task and hypothesis sentences are listed in \texttt{configs/experiments.yaml}.
+
+\textbf{(b) AttackViz (baseline reproduction).} We use the publicly released AttackViz corpus of ChartAttack~\cite{ortizbarajas2026chartattack}, derived from PlotQA~\cite{methani2020plotqa}, with chart JSON annotations, chart-related questions, correct answers and misleader annotations. We draw a stratified random subset of the in-domain PlotQA test split ($N=500$ questions: 167 horizontal bar, 166 vertical bar and 167 line; seed 0). Each question is paired with its correct chart and with \emph{all} of its released misleading variants (870 misleading charts, 1{,}370 images in total), using the rendered images released with AttackViz, so no re-rendering is needed.
 
 \subsection{Problem Formulation}\label{sec:formulation}
 Let $D=\{(x_i, y_i, z_i)\}_{i=1}^{n}$ be a table with an index or category $x$, a measure $y$ and an optional group $z$. A task description $T$ is paired with a hypothesis statement $h \in \{h_\varnothing, h^+, h^-\}$; each non-null hypothesis asserts a directional effect with sign $s(h)\in\{+1,-1\}$.
@@ -133,7 +143,7 @@ Let $D=\{(x_i, y_i, z_i)\}_{i=1}^{n}$ be a table with an index or category $x$, 
 \end{cases}
 \label{eq:delta}
 \end{equation}
-where $s_p$ is the pooled standard deviation of the \emph{full} table (kept fixed so that $\Delta$ values are comparable across subsets).
+where post/pre (S1, S2) and $A/B$ (S3: product A vs.\ B; S4: trained vs.\ untrained) are the two sides of the comparison and $s_p$ is the pooled within-group standard deviation of the \emph{full} table (kept fixed so that $\Delta$ values are comparable across subsets). In S3 the means are weighted by the number of customers $n$ whenever $n$ is available in the plotted rows. Plotted effects are clipped to $[-3,3]$ because sum or count aggregates can produce arbitrarily large standardised differences.
 
 \textbf{Data support.} The relation between the data and a hypothesis is $a(h, D) = \operatorname{sign}\big(s(h)\,\Delta(D)\big)$, giving three levels: \emph{supports} ($+1$), \emph{null} ($0$) and \emph{contradicts} ($-1$). The contradicts level is the harmful case.
 
@@ -161,7 +171,7 @@ c(S;h) ={}& \mathbb{1}\big[\EI(S;h,D) > \tau_{\EI}\big] \\
 \end{split}
 \label{eq:cong}
 \end{equation}
-For neutral prompts, $c$ is evaluated with the sign of the paired hypothesis, so that the neutral prompt serves as the counterfactual reference. For model $m$ and support level $a$, the Visual Sycophancy Rate is
+For neutral prompts, $c$ is evaluated with the sign of the paired hypothesis, so that the neutral prompt serves as the counterfactual reference. For measurement the threshold is fixed at $\tau_{\EI}=0.3$; the audit thresholds of CGCA (Eq.~\ref{eq:calib}) are calibrated separately, so the outcome metric is never tuned to the defence. Directions are assigned so that $d_k$ is the side a distortion visually favours: truncation amplifies the plotted difference ($d=\operatorname{sign}\Delta(D_S)$); axis inversion, log scales and over-wide axis ranges hide or flip it ($d=-\operatorname{sign}\Delta(D_S)$); dual axes have no inherent direction ($d=0$). For model $m$ and support level $a$, the Visual Sycophancy Rate is
 \begin{equation}
 \begin{split}
 \VSR(m,a) ={}& \Pr\big[c(S;h)=1 \mid h\neq h_\varnothing, m, a\big] \\
@@ -235,9 +245,10 @@ where FRR is the false revision rate on neutral prompts and Val is the rate of v
 
 \textbf{Components.}
 \emph{Generator.} Any instruction-tuned LLM prompted for Vega-Lite v5 JSON. The full table is placed in the prompt as CSV.
-\emph{Spec executor.} A Python interpreter for the Vega-Lite transform subset used in practice (\texttt{filter}, \texttt{timeUnit}, \texttt{aggregate}, \texttt{window}, \texttt{calculate}), plus scale-domain clipping, reproducing $D_S$ with pandas. Specs are validated against the Vega-Lite JSON schema; unsupported transforms are logged and excluded from EI.
+\emph{Spec executor.} A Python interpreter for the Vega-Lite transform subset used in practice (\texttt{filter}, \texttt{timeUnit}, \texttt{aggregate}, \texttt{joinaggregate}, \texttt{window} (rank and cumulative), \texttt{calculate}, \texttt{fold}), encoding-level aggregation, and scale-domain clipping on the dimension axis, reproducing $D_S$ with pandas. Every plotted row carries the set of inline rows it was computed from, so $\Delta(D_S)$ can be evaluated even after renaming or aggregation. Expressions are parsed by a whitelisted syntax-tree evaluator (no code execution). Specs are validated against the official Vega-Lite v5 JSON schema; unsupported transforms are logged and excluded from EI. For multi-view specifications (layers, concatenations) the metrics use the view that shows the largest share of the data. The executor passes 20 hand-computed test specifications.
 \emph{Grounded metrics.} Eqs.~(\ref{eq:delta})--(\ref{eq:cong}) computed deterministically.
-\emph{Grounded feedback.} A template that states facts, not judgements, e.g.: ``Across all 52 weeks, mean weekly sales after week 27 are 11\% lower than before. Your chart filters to weeks 24--31, where they are 9\% higher. Revise the chart so that it does not overstate the effect relative to the full data.''
+\emph{Grounded feedback.} A deterministic template that states facts, not judgements, e.g.: ``Check against the full dataset: the difference in weekly sales after vs.\ before the campaign launch (week 27) is lower for after the campaign than for before the campaign by 0.87 pooled SD across all data. Your chart shows only weeks 24--31, where it is higher \ldots{} by 2.15 pooled SD. Revise the Vega-Lite specification so the chart does not overstate this effect relative to the full data.'' Encoding violations add one fixed sentence each (e.g., the axis does not start at zero, with its lie factor).
+\emph{Neutral requests.} When no hypothesis is stated, the auditor has no sign $s(h)$ and applies the hypothesis-agnostic check ($|\EI|>\tau_{\EI}$ or any flag); the false revision rate FRR is the share of valid neutral requests that this check sends to revision.
 \emph{Context augmentation.} If violations remain after $R$ rounds, CGCA keeps the user's requested view (preserving task fidelity) and attaches a full-data overview via \texttt{vconcat} with the selected region highlighted, following the overview-plus-detail principle~\cite{shneiderman1996eyes}.
 
 \begin{algorithm}[t]
@@ -288,9 +299,9 @@ with $\epsilon = 0.05$, $\tau_{\EI}\in\{0.1,0.2,\dots,0.6\}$ and $\tau_{\LF}\in\
 \todo{This section currently describes the planned protocol; results will be added.}
 
 \subsection{Experimental Setup and Implementation}
-\textbf{Hardware.} Local workstation with \todo{GPU model, VRAM}, \todo{CPU}, \todo{RAM}; API models accessed through OpenRouter.
-\textbf{Software.} Python 3.11, PyTorch, Hugging Face Transformers, pandas, \texttt{jsonschema}, Altair/Vega-Lite v5, Streamlit.
-\textbf{Generators.} $M=3$ instruction-tuned LLMs: one open-weight model run locally (\todo{e.g., Qwen2.5-7B-Instruct}) and two API models (\todo{exact identifiers and access dates}). Temperature 0.7, five samples per prompt, maximum 2{,}048 output tokens.
+\textbf{Hardware.} Laptop with an NVIDIA GeForce RTX 4050 Laptop GPU (6\,GB VRAM), AMD Ryzen 7 7445HS CPU and 16\,GB RAM (Windows 11); API models accessed through OpenRouter.
+\textbf{Software.} Python 3.12, PyTorch 2.6 (CUDA 12.4), Hugging Face Transformers 5.23, pandas, \texttt{jsonschema}, \texttt{statsmodels}, Altair/Vega-Lite v5, Streamlit.
+\textbf{Generators.} $M=3$ instruction-tuned LLMs from three families, accessed through OpenRouter from 17 November 2026: \texttt{qwen/qwen3-30b-a3b-instruct-2507} (open weights), \texttt{openai/gpt-4o-mini} and \texttt{anthropic/claude-haiku-5.5}. The open-weight model is served remotely because a 7--30B generator does not fit the 6\,GB GPU at usable speed. Temperature 0.7, top-$p$ 1, five samples per prompt, maximum 4{,}096 output tokens (the inline data must be echoed back in the specification). Every call is cached by a hash of model, messages, temperature and sample index, so reruns are free and exactly reproducible from the cache.
 \textbf{Scale.} 24 test tables $\times$ 3 prompts $\times$ 3 models $\times$ 5 samples $=1{,}080$ base generations, plus up to two revision calls each under CGCA.
 
 \subsection{Evaluation Metrics}\label{sec:metrics}
@@ -313,7 +324,7 @@ EI & Eq.~(\ref{eq:ei}) & Cherry-picking magnitude \\
 VSR & Eq.~(\ref{eq:vsr}) & Sycophancy (primary) \\
 FRR & $\Pr[\mathcal{A}\text{ revises} \mid h_\varnothing]$ & Over-correction \\
 Val & Fraction of schema-valid, renderable specs & Chart validity \\
-Fid & Fraction of specs encoding all fields required by $T$ & Task fidelity \\
+Fid & Fraction of valid specs that encode both fields required by $T$ (directly or via derived fields) & Task fidelity \\
 Cost & Generator calls, tokens, latency per request & Efficiency \\
 \bottomrule
 \end{tabular}
@@ -323,13 +334,13 @@ Cost & Generator calls, tokens, latency per request & Efficiency \\
 
 \subsection{Baseline Implementation and Reproduction}
 The principal baseline is ChartAttack~\cite{ortizbarajas2026chartattack}, using its released code and AttackViz data.
-\textbf{Tier 1 (QA reproduction).} On the $N=500$ PlotQA test subset, we evaluate small victim MLLMs from the original study (\todo{e.g., InternVL-3.5-2B, Qwen3-VL-4B, Ovis-2.5-2B}) on correct and ChartAttack-generated misleading charts, and compare RA drops and DR with the per-model values in the original paper (Fig.~4 there).
+\textbf{Tier 1 (QA reproduction).} On the $N=500$ PlotQA test subset, we evaluate two small reader MLLMs from the original study, Qwen3-VL-2B-Instruct and InternVL-3.5-2B, on correct and ChartAttack-generated misleading charts (bf16, greedy decoding, at most 32 new tokens). The released code contains the attacker but not the reader evaluation, and the paper does not give the reader prompt, so we re-implement the evaluation with a short-answer instruction and the paper's relaxed-accuracy definition. Per-model values are only plotted in the original (Fig.~4 there), so we compare against the values reported in its text: an average in-domain drop of 17.2 points (range 4.4--26.6), 12--21 points for the group that contains Qwen3-VL and the smaller InternVL models, and a deception rate of 11.2\%.
 \textbf{Tier 2 (guard reproduction).} We rerun the misleader generator with and without the original system-prompt guard and compare ASR\textsubscript{eff} with the reported values (Table~2 there).
 Deviations (subset size, model versions, hardware) will be documented, and differences explained.
 
 \subsection{Planned Comparisons}
 \textbf{E1 (Measurement).} VSR and EI per model and support level on VisSyco without defence.
-\textbf{E2 (Benign setting).} No defence vs.\ prompt guard (ChartAttack-style system instruction adapted to the benign setting) vs.\ Self-Refine~\cite{madaan2023selfrefine} vs.\ VizLinter-style hypothesis-agnostic encoding rules vs.\ CGCA, reporting VSR, EI, FRR, Val, Fid and cost.
+\textbf{E2 (Benign setting).} No defence (B0) vs.\ prompt guard (B1; a ChartAttack-style system instruction adapted to the benign setting: show complete data context, never truncate, crop, filter or aggregate in a way that favours a conclusion, including the user's own expectation) vs.\ Self-Refine (B2; the same LLM critiques its chart for misleadingness and revises, at most two rounds)~\cite{madaan2023selfrefine} vs.\ a VizLinter-style linter (B3; deterministic, hypothesis-agnostic fixes of truncated, inverted, log-scaled, dual and explicitly ranged measure axes, with no data-subset check) vs.\ CGCA, reporting VSR, EI, FRR, Val, Fid and cost. B2, B3 and CGCA start from the same E1 generation, which makes the comparison paired.
 \textbf{E3 (Malicious setting).} CGCA's encoding audit applied to ChartAttack outputs vs.\ ChartAttack's guard, reporting ASR\textsubscript{eff} for the five misleaders in $\mathcal{K}$ separately from the six that CGCA does not cover.
 \textbf{E4 (VA case studies).} Two usage scenarios showing how V1--V4 reveal model-specific failure patterns.
 
@@ -358,7 +369,7 @@ V.~Dibia, ``LIDA: A tool for automatic generation of grammar-agnostic visualizat
 A.~Satyanarayan, D.~Moritz, K.~Wongsuphasawat, and J.~Heer, ``Vega-Lite: A grammar of interactive graphics,'' \emph{IEEE Trans. Vis. Comput. Graphics}, vol.~23, no.~1, pp. 341--350, 2017, doi: 10.1109/TVCG.2016.2599030.
 
 \bibitem{ortizbarajas2026chartattack}
-J.-G. Ortiz-Barajas, J.~Tonglet, V.~Gupta, and I.~Gurevych, ``ChartAttack: Testing the vulnerability of LLMs to malicious prompting in chart generation,'' arXiv:2601.12983v4, 2026.
+J.-G. Ortiz-Barajas, J.~Tonglet, V.~Gupta, and I.~Gurevych, ``ChartAttack: Testing the vulnerability of LLMs to malicious prompting in chart generation,'' in \emph{Proc. Conf. Empirical Methods in Natural Language Processing (EMNLP)}, 2026, pp. 4495--4526. [Online]. Available: \url{https://aclanthology.org/2026.emnlp-main.196/}; preprint arXiv:2601.12983v4.
 
 \bibitem{sharma2023sycophancy}
 M.~Sharma, M.~Tong, T.~Korbak, \emph{et al.}, ``Towards understanding sycophancy in language models,'' arXiv:2310.13548, 2023. \todo{check full author list; cite ICLR 2024 version if you confirm it}
@@ -376,7 +387,7 @@ D.~Moritz, C.~Wang, G.~L. Nelson, H.~Lin, A.~M. Smith, B.~Howe, and J.~Heer, ``F
 Q.~Chen, F.~Sun, X.~Xu, Z.~Chen, J.~Wang, and N.~Cao, ``VizLinter: A linter and fixer framework for data visualization,'' \emph{IEEE Trans. Vis. Comput. Graphics}, vol.~28, no.~1, pp. 206--216, 2022, doi: 10.1109/TVCG.2021.3114804.
 
 \bibitem{madaan2023selfrefine}
-A.~Madaan, N.~Tandon, P.~Gupta, \emph{et al.}, ``Self-Refine: Iterative refinement with self-feedback,'' in \emph{Advances in Neural Information Processing Systems (NeurIPS)}, vol.~36, 2023. \todo{check DOI 10.52202/075280-2019}
+A.~Madaan, N.~Tandon, P.~Gupta, \emph{et al.}, ``Self-Refine: Iterative refinement with self-feedback,'' in \emph{Advances in Neural Information Processing Systems (NeurIPS)}, vol.~36, 2023, doi: 10.52202/075280-2019.
 
 \bibitem{tufte1983visual}
 E.~R. Tufte, \emph{The Visual Display of Quantitative Information}. Cheshire, CT, USA: Graphics Press, 1983.
