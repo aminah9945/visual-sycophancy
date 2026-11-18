@@ -1,4 +1,4 @@
-# Visual Sycophancy: Measuring and Mitigating Hypothesis-Congruent Chart Generation in LLMs
+# Sycophantic Chart Generation: Measuring and Mitigating Hypothesis-Congruent Charts from LLMs
 
 Course research project (Visual Analytics + Generative AI).
 
@@ -27,7 +27,7 @@ pytest -q                                                              # 77 acce
 |---|---|
 | `src/vissyco/` | scenarios (Eq. 2), table generator, prompt templates |
 | `src/executor/vl_exec.py` | Vega-Lite v5 validation + transform executor (sandboxed expressions) |
-| `src/metrics/grounded.py` | Delta, EI, LF, flags, congruence, VSR (Eqs. 2-6) |
+| `src/metrics/grounded.py` | Delta, EI, LF, flags, congruence, CSR (Eqs. 2-6) |
 | `src/metrics/stats.py` | cluster bootstrap, clustered logit, McNemar + Holm |
 | `src/llm/client.py` | OpenRouter client, disk cache, budget stop |
 | `src/cgca/` | CGCA (Algorithm 1) and baselines B1-B3 |
@@ -39,7 +39,7 @@ pytest -q                                                              # 77 acce
 |---|---|
 | VisSyco data, Table (statistics), Fig. (scenarios) | `python -m src.vissyco.generate_data --out data/vissyco --seeds 1 2 3` then `python -m src.analysis.make_tables --exp DATA` |
 | ChartAttack reproduction table | `python -m src.chartattack.run_qa --models qwen3-vl-2b,internvl3.5-2b --n 500 --out runs/A` then `python -m src.analysis.make_tables --exp A` |
-| E1 VSR table + figure | `python -m src.run_generation --exp E1 --split test --models all --samples 5` then `python -m src.analysis.make_tables --exp E1` |
+| E1 CSR table + figure | `python -m src.run_generation --exp E1 --split test --models all --samples 5` then `python -m src.analysis.make_tables --exp E1` |
 | Threshold calibration (dev only) | `python -m src.run_generation --exp DEV --split dev` then `python -m src.calibrate --split dev --eps 0.05` |
 | E2 defence comparison + McNemar | `python -m src.run_defenses --exp E2 --split test --defenses B0,B1,B2,B3,CGCA` then `python -m src.analysis.make_tables --exp E2` |
 | Ablations A1-A6 + tau curve | `python -m src.run_defenses --exp ABL --split test --ablations A1,A2,A3,A4,A5,A6 --models qwen3-30b,gpt-4o-mini` then `python -m src.analysis.make_tables --exp ABL` |

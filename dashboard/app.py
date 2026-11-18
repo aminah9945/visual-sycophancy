@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT))
 from src.cgca.audit import _overview  # noqa: E402
 from src.metrics.grounded import manifest, vsr_units  # noqa: E402
 
-st.set_page_config(page_title="Visual Sycophancy Auditor", layout="wide")
+st.set_page_config(page_title="Sycophantic Chart Auditor", layout="wide")
 DEV_TYPES = ["window", "subgroup", "aggregation", "encoding"]
 
 
@@ -38,7 +38,7 @@ def load(exp: str) -> pd.DataFrame:
 
 
 exps = sorted(p.parent.parent.name for p in (ROOT / "runs").glob("*/raw/calls.jsonl"))
-st.sidebar.title("Visual Sycophancy Auditor")
+st.sidebar.title("Sycophantic Chart Auditor")
 if not exps:
     st.info("No results yet. Run `python -m src.run_generation --exp E1` first.")
     st.stop()
@@ -52,10 +52,10 @@ st.sidebar.metric("Generations", len(d))
 st.sidebar.metric("Valid specs", f"{d.valid.mean():.0%}")
 
 # ------------------------------------------------------------------ V1 overview
-st.subheader("V1 · Overview: Visual Sycophancy Rate by model × hypothesis × support")
+st.subheader("V1 · Overview: Chart Sycophancy Rate by model × hypothesis × support")
 u = vsr_units(d)
 if u.empty:
-    st.warning("No VSR units for this selection.")
+    st.warning("No CSR units for this selection.")
     st.stop()
 u["cell"] = u.h.map({"pos": "h+", "neg": "h−"}) + " · " + u.support
 v1 = u.groupby(["model", "cell", "h", "support"], as_index=False).agg(VSR=("diff", "mean"), p_h=("p_h", "mean"),
@@ -65,7 +65,7 @@ lim = max(0.05, float(v1.VSR.abs().max()))
 heat = (alt.Chart(v1).mark_rect(stroke="white").encode(
     x=alt.X("cell:N", title=None, sort=[f"{h} · {s}" for h in ("h+", "h−") for s in ("supports", "null", "contradicts")]),
     y=alt.Y("model:N", title=None),
-    color=alt.Color("VSR:Q", scale=alt.Scale(scheme="redblue", reverse=True, domain=[-lim, lim]), title="VSR"),
+    color=alt.Color("VSR:Q", scale=alt.Scale(scheme="redblue", reverse=True, domain=[-lim, lim]), title="CSR"),
     opacity=alt.condition(sel1, alt.value(1), alt.value(0.35)),
     tooltip=["model", "cell", alt.Tooltip("VSR:Q", format="+.2f"), alt.Tooltip("p_h:Q", format=".2f"),
              alt.Tooltip("p_neutral:Q", format=".2f"), "n"])

@@ -2,7 +2,7 @@
 
     python -m src.analysis.make_tables --exp DATA   # VisSyco statistics table + scenario figure
     python -m src.analysis.make_tables --exp A      # ChartAttack reported vs reproduced
-    python -m src.analysis.make_tables --exp E1     # VSR table + figure + regression
+    python -m src.analysis.make_tables --exp E1     # CSR table + figure + regression
     python -m src.analysis.make_tables --exp E2     # defence comparison + McNemar
     python -m src.analysis.make_tables --exp ABL    # ablations + tau curve
 """
@@ -197,12 +197,12 @@ def e1(exp="E1"):
         lines.append(f"{MODEL_NAMES.get(m, m)} & " + " & ".join(cells) + f" & {f(ei.mean())} & {f(d.valid.mean(), pct=True)} & {f(d.fid.astype(float).mean(), pct=True)} \\\\")
     write("e1_vsr", r"""\begin{table*}[t]
 \centering
-\caption{E1: Visual Sycophancy Rate (Eq.~\ref{eq:vsr}) by support level, 95\% cluster-bootstrap CIs over tables (10{,}000 resamples). Mean EI over hypothesis prompts (Eq.~\ref{eq:ei}); Val: valid specs (\%); Fid: task fidelity (\%).}
+\caption{E1: Chart Sycophancy Rate (Eq.~\ref{eq:vsr}) by support level, 95\% cluster-bootstrap CIs over tables (10{,}000 resamples). Mean EI over hypothesis prompts (Eq.~\ref{eq:ei}); Val: valid specs (\%); Fid: task fidelity (\%).}
 \label{tab:e1}
 \footnotesize
 \begin{tabular}{lcccccc}
 \toprule
-Generator & VSR supports & VSR null & VSR contradicts & Mean EI & Val & Fid \\
+Generator & CSR supports & CSR null & CSR contradicts & Mean EI & Val & Fid \\
 \midrule
 """ + "\n".join(lines) + r"""
 \bottomrule
@@ -251,7 +251,7 @@ Generator & Cong. & Window & Subgr. & Aggr. & Enc. & Unsupp. & No comp. \\
         ax.bar(xs, c.VSR, w, label=MODEL_NAMES.get(m, m), yerr=[c.VSR - c.ci_lo, c.ci_hi - c.VSR], capsize=2, error_kw={"lw": .7})
     ax.axhline(0, c="k", lw=.6)
     ax.set_xticks(range(3), SUPPORT_ORDER)
-    ax.set_ylabel("VSR")
+    ax.set_ylabel("CSR")
     ax.legend(fontsize=7, frameon=False)
     fig.tight_layout()
     fig.savefig(FIG / "e1_vsr.pdf")
@@ -317,12 +317,12 @@ def e2(exp="E2"):
                          f"{f(x.FRR, pct=True)} & {f(x.Val, pct=True)} & {f(x.Fid, pct=True)} & {x.calls:.2f} / {x.ktok:.1f} \\\\")
     write("e2_main", r"""\begin{table*}[t]
 \centering
-\caption{E2: defences in the benign setting (test split). VSR overall and on contradicting data; Cong.: congruent-deviation rate on hypothesis prompts (\%); EI: mean effect inflation; FRR: false revision rate on neutral prompts (\%); Val, Fid (\%); cost: generator calls / k tokens per request. Post-hoc defences (B2, B3, CGCA) start from the same E1 generation.}
+\caption{E2: defences in the benign setting (test split). CSR overall and on contradicting data; Cong.: congruent-deviation rate on hypothesis prompts (\%); EI: mean effect inflation; FRR: false revision rate on neutral prompts (\%); Val, Fid (\%); cost: generator calls / k tokens per request. Post-hoc defences (B2, B3, CGCA) start from the same E1 generation.}
 \label{tab:e2}
 \footnotesize
 \begin{tabular}{lcccccccc}
 \toprule
-Defence & VSR & VSR\textsubscript{contra} & Cong. & EI & FRR & Val & Fid & Cost \\
+Defence & CSR & CSR\textsubscript{contra} & Cong. & EI & FRR & Val & Fid & Cost \\
 \midrule
 """ + "\n".join(lines) + r"""
 \bottomrule
@@ -368,7 +368,7 @@ def abl(exp="ABL"):
 \setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{lccccccc}
 \toprule
-Variant & VSR & VSR\textsubscript{c} & Cong. & EI & FRR & Fid & Calls \\
+Variant & CSR & CSR\textsubscript{c} & Cong. & EI & FRR & Fid & Calls \\
 \midrule
 """ + "\n".join(lines) + r"""
 \bottomrule
@@ -383,7 +383,7 @@ Variant & VSR & VSR\textsubscript{c} & Cong. & EI & FRR & Fid & Calls \\
     ax.plot(cur.FRR, cur.VSR, "o-")
     for _, x in cur.iterrows():
         ax.annotate(f"{x.tau:g}", (x.FRR, x.VSR), fontsize=6, xytext=(3, 3), textcoords="offset points")
-    ax.set(xlabel="FRR (neutral prompts)", ylabel="VSR")
+    ax.set(xlabel="FRR (neutral prompts)", ylabel="CSR")
     fig.tight_layout()
     FIG.mkdir(parents=True, exist_ok=True)
     fig.savefig(FIG / "abl_tau.pdf")
