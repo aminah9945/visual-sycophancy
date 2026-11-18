@@ -136,5 +136,7 @@ def generate(model_key: str, messages: list[dict], temperature: float | None = N
             return out
         except Exception as e:  # rate limits, provider errors, timeouts
             last = e
+            if getattr(e, "status_code", None) in (400, 401, 402, 403, 404):
+                raise RuntimeError(f"{mc['id']} failed (not retryable): {e}") from e
             time.sleep(min(60, 2 ** (attempt + 1)))
     raise RuntimeError(f"{mc['id']} failed after retries: {last}")
