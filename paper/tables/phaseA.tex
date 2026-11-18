@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{ChartAttack Tier-1 reproduction on AttackViz (PlotQA in-domain test, $N=500$ questions stratified by chart type; each question is answered on its correct chart and on all its misleading variants). RA: relaxed accuracy (\%); DR: deception rate (\%), originally correct / incorrect.}
+\label{tab:repro}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccc}
+\toprule
+Reader & RA correct & RA misleading & Drop (pp) & DR\textsubscript{corr} & DR\textsubscript{inc} \\
+\midrule
+\multicolumn{6}{l}{\emph{Reported~\cite{ortizbarajas2026chartattack} (all 19 readers)}} \\
+Average & -- & -- & 17.2 & 11.2 & 1.7 \\
+Range & -- & -- & 4.4--26.6 & -- & -- \\
+\midrule
+\multicolumn{6}{l}{\emph{Reproduced (ours)}} \\
+Qwen3-VL-2B & 65.2 & 20.6 & 44.6 & 53.2 & 59.7 \\
+\bottomrule
+\end{tabular}
+\end{table}

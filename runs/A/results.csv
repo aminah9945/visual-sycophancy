@@ -1,0 +1,2 @@
+model,n_questions,n_misleading_charts,acc_correct,acc_misleading,drop_pp,DR_orig_correct,DR_orig_incorrect
+qwen3-vl-2b,500,870,0.652,0.2057471264367816,44.62528735632184,0.5320284697508897,0.5974025974025974
